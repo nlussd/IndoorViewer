@@ -1,0 +1,94 @@
+html, body,
+#viewDiv  {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#titleDiv {
+  color: white;
+  padding: 15px;
+  position: absolute;
+  z-index: 2;
+  top: 5%;
+  right: 15px;
+  font-size: 200%;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: black;
+  height: 5%;
+  width: 25%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#contentDiv {
+  color: white;
+  padding: 15px;
+  position: absolute;
+  z-index: 2;
+  top: 16%;
+  right: 15px;
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: black;
+  height: 60%;
+  width: 25%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#searchDiv {
+  color: black;
+  padding: 5px;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  right: 0px;
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  /*background-color: white;*/
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0;
+}
+
+#chartDiv {
+  position: absolute;
+  z-index: 3;
+  top: 10%;
+  right: 0px;
+  font-size: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  height: 50%;
+  width: 100%;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#search{
+  width: 80%;
+  height: 30px;
+  z-index: 110;
+  text-align: left;
+  padding: 5px;
+  float: left;
+}
+
+#execute{
+  height: 30px;
+  width: 30px;
+  z-index: 110;
+  padding: 0;
+  float: left;
+}
+
+input[type=text] {
+  width: 50%;
+  padding: 5px;
+  margin: 0px 5px 0px 10px;
+  box-sizing: border-box;
+  left: 0px;
+}
