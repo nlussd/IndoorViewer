@@ -47,6 +47,14 @@ require([
 
   view.ui.add(homeWidget, "top-left");
 
+  var layerList = new LayerList({
+    view: view
+  });
+  // Adds widget below other elements in the bottom left corner of the view
+  view.ui.add(layerList, {
+    position: "bottom-left"
+  });
+
   var queryRoomTask = new QueryTask({
     url: "https://services8.arcgis.com/TWq7UjmDRPE14lEV/arcgis/rest/services/Interior_Space/FeatureServer/0"
   });
@@ -111,7 +119,7 @@ require([
       "dataProvider": pieData,
       "innerRadius": "40%",
       "depth3D": 6,
-      "hideCredits":true,
+      // "hideCredits":true,
       "theme": "dark",
       "valueField": "Count",
       "titleField": "Status",
